@@ -13,6 +13,7 @@ Find the hidden flag inside the provided file.
 ## Approach
 
 As soon as I tried to open the file, I ran into a problem. The system identified it as a **binary file** and asked me which application should be used to open it and which encoding should be used.
+![Task 7 result](task7_result.png)
 
 I first tried opening it with a text editor, but I could not understand the contents. It was clearly not being displayed in a useful way, so I decided to try another approach.
 
