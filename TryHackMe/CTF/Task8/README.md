@@ -42,12 +42,9 @@ Then I created a `solve.py` file and used the `base58` library to decode the str
 
 ```python
 import base58
-
 text = "3agrSy1CewF9v8ukcSkPSYm3oKUoByUpKG4L"
+print(base58.b58decode(text).decode())
 
-decoded = base58.b58decode(text).decode("utf-8")
-
-print(decoded)
 ```
 
 I ran the script from the terminal:
