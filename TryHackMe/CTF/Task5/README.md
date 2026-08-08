@@ -1,10 +1,8 @@
-# CTF Task 5 — Hidden Flag in HTML Source
+# CTF Task 5 — Hidden Text
 
 ## Task
 
 > Huh, where is the flag?
-
-**Task file:** `task5_result.png`
 
 ## Goal
 
@@ -12,23 +10,15 @@ Find the hidden flag.
 
 ## Approach
 
-This challenge took me much longer than I expected.
+I spent quite a lot of time on this challenge because I could not understand where the flag was hidden.
 
-At first, I could not understand where the flag was supposed to be or what I should look for. I tried to inspect the page visually, but there was no obvious clue that pointed directly to the answer.
+There was no obvious clue on the page. After trying to figure out what I was supposed to look for, I decided to inspect the text more carefully.
 
-After spending quite some time on the challenge, I decided to go back to one of the basic techniques I had already used before: checking the webpage's source code.
+I noticed that there was a blank white area next to the question. I selected the text in this area, and the hidden content became visible.
 
-I selected the visible text on the page and inspected the HTML using the browser's developer tools.
+The flag was hidden by using text that was not normally visible against the background.
 
-To my surprise, the flag was hidden in the HTML source.
-
-It was one of those moments when I was both very happy that I found it and slightly annoyed that I had spent so much time looking for something that was actually right there. 😅
-
-## Result
-
-```text
-THM{wh173_fl46}
-```
+It was a simple trick, but I did not notice it at first. When I finally found the flag, I was both very happy and a little annoyed that I had spent so much time looking for it. 😅
 
 ## Flag
 
@@ -38,8 +28,8 @@ THM{wh173_fl46}
 
 ## What I Learned
 
-This challenge reminded me not to overcomplicate a problem when there are no obvious clues.
+This challenge taught me that not all hidden information requires complicated tools or techniques.
 
-When a webpage does not reveal anything useful visually, checking the **HTML source code** and the browser's **developer tools** should be one of the basic things to try.
+When something looks empty or suspiciously blank, it is worth trying to **select the text** and inspect what is actually there.
 
-Sometimes the simplest approach is the one that works.
+A useful first step when investigating a webpage is to check whether apparently empty areas contain hidden or invisible text.
