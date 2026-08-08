@@ -23,7 +23,7 @@ One thing I noticed was that the content extended very far horizontally. I becam
 
 At the same time, I was researching possible ways to analyze or decode this type of file.
 
-While scrolling through the contents, I suddenly found the flag hidden inside the file.
+While scrolling through the contents, I suddenly found the flag hidden inside the file.The file contained readable text embedded within its binary data.
 
 It was a very unexpected discovery, especially because the file initially looked like meaningless binary data.
 
