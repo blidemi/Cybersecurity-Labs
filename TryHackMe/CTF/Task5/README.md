@@ -4,21 +4,33 @@
 
 > Huh, where is the flag?
 
-## Goal
+## Objective
 
-Find the hidden flag.
+Find the hidden flag on the page.
 
-## Approach
+## Investigation
 
-I spent quite a lot of time on this challenge because I could not understand where the flag was hidden.
+At first, there was no obvious location or clue indicating where the flag was hidden.
 
-There was no obvious clue on the page. After trying to figure out what I was supposed to look for, I decided to inspect the text more carefully.
+Instead of immediately using external tools, I started by examining the page visually and looking for anything unusual.
 
-I noticed that there was a blank white area next to the question. I selected the text in this area, and the hidden content became visible.
+One detail caught my attention: there was an apparently empty area on the page. I considered that the area might not actually be empty and decided to test this hypothesis by selecting the text.
 
-The flag was hidden by using text that was not normally visible against the background.
+After selecting the content, previously invisible text became visible.
 
-It was a simple trick, but I did not notice it at first. When I finally found the flag, I was both very happy and a little annoyed that I had spent so much time looking for it. 😅
+The hidden text contained the flag:
+
+```text
+THM{wh173_fl46}
+```
+
+## Why It Worked
+
+The flag was hidden by making the text visually indistinguishable from the page background.
+
+The content therefore existed on the page, but it was not immediately visible during normal browsing.
+
+This is a useful example of why visual inspection should not be limited to what is immediately visible to the user.
 
 ## Flag
 
@@ -26,10 +38,15 @@ It was a simple trick, but I did not notice it at first. When I finally found th
 THM{wh173_fl46}
 ```
 
-## What I Learned
+## Key Takeaways
 
-This challenge taught me that not all hidden information requires complicated tools or techniques.
+- Apparently empty areas of a webpage may still contain text or other content.
+- Selecting text can reveal content that is visually hidden.
+- When a challenge provides no obvious clue, it is useful to investigate anomalies rather than immediately assuming that a complex technique is required.
+- A good first step is to form a hypothesis and test it instead of trying tools randomly.
 
-When something looks empty or suspiciously blank, it is worth trying to **select the text** and inspect what is actually there.
+## Reflection
 
-A useful first step when investigating a webpage is to check whether apparently empty areas contain hidden or invisible text.
+This challenge initially took me longer than expected because I was looking for a more complicated hiding technique.
+
+The main lesson for me was that **simple observations can be just as important as technical tools**. Before escalating to more advanced analysis, I should first make sure I have fully investigated what is already in front of me.
